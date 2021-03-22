@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Content="Thermometer" Click="ButtonThermometer_Click" />
+        <Button Grid.Row="1" Content="(+) Erhöhen" Click="ButtonErhoehen_Click" />
+        <Button Grid.Row="2" Content="(-) Reduzieren" Click="ButtonReduzieren_Click" />
     </Grid>
 </Window>
